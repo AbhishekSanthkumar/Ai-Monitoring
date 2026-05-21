@@ -31,14 +31,14 @@ application connection pools, and prepare to failover to db-02.
 
 ## ✨ Features
 
-- **Anomaly detection** — Isolation Forest ML model flags unusual metric patterns in real time
-- **Time series forecasting** — Linear regression predicts when metrics will breach thresholds
-- **AI explanations** — Claude turns raw numbers into actionable on-call alerts
-- **Live dashboard** — Real-time metric charts with threshold reference lines
-- **Multi-host support** — Monitor unlimited servers simultaneously
-- **Redis time series** — Efficient sorted set storage with automatic 24h TTL cleanup
-- **REST API** — Full API for ingesting metrics and querying predictions
-- **Built-in simulator** — Generates realistic metric data including memory leaks and connection surges for testing
+- **Anomaly detection** - Isolation Forest ML model flags unusual metric patterns in real time
+- **Time series forecasting** - Linear regression predicts when metrics will breach thresholds
+- **AI explanations** - Claude turns raw numbers into actionable on-call alerts
+- **Live dashboard** - Real-time metric charts with threshold reference lines
+- **Multi-host support** - Monitor unlimited servers simultaneously
+- **Redis time series** - Efficient sorted set storage with automatic 24h TTL cleanup
+- **REST API** - Full API for ingesting metrics and querying predictions
+- **Built-in simulator** - Generates realistic metric data including memory leaks and connection surges for testing
 
 ---
 
@@ -127,7 +127,7 @@ git clone https://github.com/AbhishekSanthkumar/Ai-Monitoring.git
 cd Ai-Monitoring
 
 # dashboard (separate repo)
-git clone https://github.com/AbhishekSanthkumar/monitoring-dashboard.git
+git clone https://github.com/AbhishekSanthkumar/Ai-Monitoring-Dashboard.git
 ```
 
 ### 2. Backend setup
@@ -208,7 +208,7 @@ curl http://localhost:8001/analysis | python -m json.tool
 ### 7. Start the dashboard
 
 ```bash
-cd monitoring-dashboard
+cd Ai-Monitoring-Dashboard
 npm install
 npm run dev
 ```
@@ -242,16 +242,16 @@ Click **Run analysis** in the dashboard and wait 35 seconds, you should see the 
 
 ### Dashboard on Vercel
 
-1. Update the API URL in `monitoring-dashboard/src/App.jsx`:
+1. Update the API URL in `Ai-Monitoring-Dashboard/src/App.jsx`:
    ```js
    const API = "https://your-railway-url.up.railway.app"
    ```
 2. Commit and push the change
-3. Go to [vercel.com](https://vercel.com) → **New Project** → import `monitoring-dashboard`
+3. Go to [vercel.com](https://vercel.com) → **New Project** → import `Ai-Monitoring-Dashboard`
 4. Vercel auto-detects Vite — click **Deploy**
 5. Your dashboard will be live at:
    ```
-   https://monitoring-dashboard.vercel.app
+   https://Ai-Monitoring-Dashboard.vercel.app
    ```
 
 ### Update CORS after deployment
