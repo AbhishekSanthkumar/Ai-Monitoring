@@ -64,12 +64,12 @@ Your Servers / Applications
 │  forecaster.py                              │
 │  ├── Linear regression per metric           │
 │  ├── Breach time prediction                 │
-│  └── Confidence scoring (R²)               │
+│  └── Confidence scoring (R²)                │
 │                                             │
 │  explainer.py  ←── Claude Sonnet API        │
 │  ├── Correlate anomalies + forecasts        │
 │  ├── Generate human-readable alerts         │
-│  └── Overall health assessment             │
+│  └── Overall health assessment              │
 └──────────────┬──────────────────────────────┘
                │
                ▼
